@@ -29,6 +29,15 @@ Maven is a code build tool which used to convert your code to an artifact. this 
   
     ```sh
     mvn --version
+    
+    [root@Jenkins ~]# mvn -version
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /opt/maven/apache-maven-3.6.3
+Java version: 1.8.0_252, vendor: Oracle Corporation, runtime: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.252.b09-2.51.amzn1.x86_64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.14.181-108.257.amzn1.x86_64", arch: "amd64", family: "unix"
+[root@Jenkins ~]#
+
     ```
 So far we have completed the installation of maven software to support maven plugin on the jenkins console. Let's jump onto Jenkins to complete the remaining steps. 
 
