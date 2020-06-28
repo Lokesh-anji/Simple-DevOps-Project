@@ -19,6 +19,7 @@ Ansible is an open-source automation platform. It is very, very simple to set up
     pip install ansible
    ansible --version
    ```
+   IF  config file = None then mkdir /etc/ansible
    
 1. Create a user called ansadmin (on Control node and Managed host)  
    ```sh
