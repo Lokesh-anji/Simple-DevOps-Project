@@ -53,6 +53,11 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    usermod -aG docker ansadmin
 
    ```
+   #Password Auth
+   vi /etc/ssh/sshd_config
+   #set passwordauthentication yes
+   service sshd restart
+   
 1. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it. 
  
 ### Validation test
