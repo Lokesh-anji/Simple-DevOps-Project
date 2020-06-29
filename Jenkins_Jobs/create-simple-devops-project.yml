@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+
+  - name: deleting  docker container
+    command: docker rm -f simple-devops-container
+    ignore_errors: yes
+
+  - name: deleting docker image
+    command: docker rmi loanji/simple-devops-image:latest
+    ignore_errors: yes
+
+#  - name: creating docker image
+#    command: docker build -t simple-devops-image .
+
+#    args:
+#      chdir: /opt/Docker
+
+   - name: pulling docker image
+     command: docker pull loanji/simple-devops-image:latest
+
+   - name: creating a docker container
+     command: docker run -d --name simple-devops-container -p 8080:8080  loanji/simple-devops-image:latest
