@@ -17,3 +17,8 @@
   - name: Removing Docker image
     command: docker rmi simple-devops-image:latest loanji/simple-devops-image
     ignore_errors: yes
+    
+    
+    
+  
+
