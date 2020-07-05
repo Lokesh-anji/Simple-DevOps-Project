@@ -88,6 +88,8 @@ Suggestions:
 1. To delete cluster
     ```sh
      kops delete cluster demo.k8s.valaxy.net --yes
+     
+     kops delete cluster dev.k8s.lokesh.in --yes --state=s3://dev.k8s.lokesh.in --yes
     ```
    
 #### Deploying Nginx pods on Kubernetes
